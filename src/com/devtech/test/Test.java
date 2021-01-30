@@ -2,6 +2,8 @@ package com.devtech.test;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 import com.devtech.DailyTask.DailyCouponExpirationTask;
 import com.devtech.Facade.AdminFacade;
 import com.devtech.Facade.ClientType;
@@ -113,9 +115,14 @@ public class Test {
 		
 		ConnectionPool.getInstance().closeAllConnections();
 		
-		DailyCouponExpirationTask job = new DailyCouponExpirationTask();
-		job.run();
-		
+		//if istablish the Daily Job or not..
+		int dialogButton = JOptionPane.YES_NO_OPTION;
+	    int StopTheSystem = JOptionPane.showConfirmDialog (null, "Would You Like to Log out from the system?","Warning",dialogButton);
+
+	    if (StopTheSystem == JOptionPane.YES_OPTION) {
+	    	DailyCouponExpirationTask job = new DailyCouponExpirationTask();
+	    	job.run();
+	    }
 	}
 	public static void space() {
 		System.out.println();
