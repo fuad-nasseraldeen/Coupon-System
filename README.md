@@ -29,8 +29,8 @@ Singleton, Data Access Object - Dao, Factory, Facade, Thread + Connection Pool, 
 
 ## The project will be build in 3 phases
 + Phase 1 - Stand alone java Core application.
-+ Phase 2 - Will add RestAPI Web Services and client side using Angular. (soon)
-+ Phase 3 - Will change the project to Spring framework and microservices application. (soon) 
++ Phase 2 - At this point the system will actually be rebuilt based on  Spring framework, Spring Boot ,JPA, Hibernate. (soon)
++ Phase 3 - At this point we are externalizing the business logic of the server to the world so that it can be used over the Internet based on Sprint MVC, SPA, Angular, rest API FullStack Development. (soon)
 
 ## For Phase 1:
 + The project base on MySQL Workbench Server Database.
